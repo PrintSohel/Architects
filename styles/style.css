@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&family=Poppins:wght@500;700&display=swap');
+
+/* common */
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* header */
+.header {
+    background-color: rgba(255, 144, 14, 0.1);
+    /* max-width: 1440px; */
+    padding: 0 50px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+h1,
+.discription {
+    padding: 0 400px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 64px;
+}
+
+p {
+    margin: 30px 0;
+}
+
+.btns {
+    text-align: center;
+}
+
+.btn {
+    background: #FF900E;
+    border: 0;
+    border-radius: 10px;
+    width: 180px;
+    height: 64px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.banner-img {
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Quick list of Features */
+.q-features {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 70px 200px;
+}
+
+.q-feature-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#quick {
+    font-weight: 500;
+    color: #727272;
+}
+
+#features {
+    color: #FF900E;
+}
+
+/* Features you will love */
+.features {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 70px 200px;
+}
+
+#f-love {
+    border-left: 3px solid orange;
+    padding-left: 20px;
+}
+
+.box-pera {
+    background-color: white;
+    box-shadow: 5px 10px 20px rgb(223, 223, 223);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.box-pera p {
+    margin: 10px 0;
+}
+
+/* some facts */
+.s-facts {
+    padding: 70px 200px;
+}
+
+.box {
+    text-align: center;
+    width: 241.83px;
+    height: 241.83px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+}
+
+.f-box {
+    display: flex;
+    padding: 0 200px;
+    gap: 100px;
+    align-items: center;
+}
+
+.box img {
+    margin-top: 35px;
+}
+
+.b-number {
+    color: #424242;
+    font-weight: 600;
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.b-description {
+    color: #727272;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Our-sponspors */
+.o-sponspors {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.s-logo {
+    display: flex;
+    padding: 50px 200px;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 5px 0;
+}
+
+/* responsive */
+@media only screen and (max-width:688px) {
+    .header {
+        padding: 10px;
+    }
+
+    .nav,
+    .q-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        padding: 0;
+    }
+
+    h1,
+    .discription {
+        padding: 0;
+    }
+
+    .f-img img,
+    .banner-img img {
+        width: 100%;
+    }
+
+    .q-feature-img {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        pad
+    }
+
+    .q-features {
+        padding: 20px;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .features {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .experience {
+        font-weight: 500;
+        font-size: 10px;
+    }
+
+    .s-facts {
+        padding: 20px;
+    }
+
+    .f-box {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .o-sponspors {
+        margin-top: 50px;
+    }
+
+    .s-logo {
+        flex-direction: column;
+        padding: 30px 70px;
+        gap: 50px;
+    }
+}
